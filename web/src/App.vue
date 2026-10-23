@@ -15,7 +15,7 @@ import NavSidebar from '@/components/NavSidebar.vue'
 import Cover from '@/components/Cover.vue'
 import MobileNav from '@/components/MobileNav.vue'
 
-const entered = ref(localStorage.getItem('app_entered') === 'true')
+const entered = ref(false)
 const appReady = ref(false)
 
 function onEntered() {

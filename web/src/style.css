@@ -1,22 +1,25 @@
 :root {
-  --pine: #123F37;
-  --jade: #1D7561;
-  --jade-deep: #155B4C;
-  --jade-light: #E6F3EE;
-  --jade-soft: #D1E8DC;
-  --cream: #FFFDF0;
-  --cream-warm: #FAF6E8;
-  --ink: #19352E;
-  --ink-soft: #4A6B5F;
-  --ink-hint: #8BABA0;
-  --border: #D9E3DC;
-  --border-soft: #E8EFE9;
+  --pine: #1A1A1A;
+  --jade: #2A2A2A;
+  --jade-deep: #0F0F0F;
+  --jade-light: #F0EDE5;
+  --jade-soft: #E3DFD4;
+  --cream: #F5F2EC;
+  --cream-warm: #FAF8F3;
+  --ink: #1A1A1A;
+  --ink-soft: #555555;
+  --ink-hint: #8A857C;
+  --border: #DDD9CF;
+  --border-soft: #E8E4DA;
   --danger: #B54C4C;
   --danger-soft: #F3E0E0;
   --white: #FFFFFF;
-  --shadow-sm: 0 1px 3px rgba(25, 53, 46, 0.06);
-  --shadow-md: 0 2px 12px rgba(25, 53, 46, 0.08);
-  --shadow-lg: 0 8px 32px rgba(25, 53, 46, 0.12);
+  --gold: #B8956A;
+  --gold-soft: #D4B896;
+  --gold-deep: #9A7B52;
+  --shadow-sm: 0 1px 3px rgba(26, 26, 26, 0.06);
+  --shadow-md: 0 2px 12px rgba(26, 26, 26, 0.08);
+  --shadow-lg: 0 8px 32px rgba(26, 26, 26, 0.12);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -50,34 +53,34 @@ button {
 button:active { transform: scale(0.97); }
 
 button.btn-primary {
-  background: linear-gradient(135deg, var(--jade), var(--jade-deep));
-  color: var(--white);
+  background: linear-gradient(135deg, var(--jade), var(--pine));
+  color: var(--cream);
   border-radius: var(--radius-md);
   padding: 12px 24px;
   font-weight: 600;
-  box-shadow: 0 2px 8px rgba(29, 117, 97, 0.25);
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.2);
 }
-button.btn-primary:hover { box-shadow: 0 4px 16px rgba(29, 117, 97, 0.35); transform: translateY(-1px); }
+button.btn-primary:hover { box-shadow: 0 4px 16px rgba(26, 26, 26, 0.3); transform: translateY(-1px); }
 
 button.btn-success {
-  background: linear-gradient(135deg, #2A9D7E, var(--jade));
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
   color: var(--white);
   border-radius: var(--radius-md);
   padding: 12px 24px;
   font-weight: 600;
-  box-shadow: 0 2px 8px rgba(42, 157, 126, 0.25);
+  box-shadow: 0 2px 8px rgba(184, 149, 106, 0.25);
 }
-button.btn-success:hover { box-shadow: 0 4px 16px rgba(42, 157, 126, 0.35); transform: translateY(-1px); }
+button.btn-success:hover { box-shadow: 0 4px 16px rgba(184, 149, 106, 0.35); transform: translateY(-1px); }
 
 button.btn-outline {
   background: var(--white);
-  color: var(--jade-deep);
+  color: var(--ink);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-md);
   padding: 12px 24px;
   font-weight: 600;
 }
-button.btn-outline:hover { border-color: var(--jade); background: var(--jade-light); }
+button.btn-outline:hover { border-color: var(--gold); background: var(--cream-warm); }
 
 button.btn-danger {
   background: var(--white);
@@ -96,7 +99,7 @@ button.btn-ghost {
   padding: 10px 16px;
   font-weight: 500;
 }
-button.btn-ghost:hover { background: var(--jade-light); color: var(--jade-deep); }
+button.btn-ghost:hover { background: var(--jade-light); color: var(--ink); }
 
 button.btn-block { width: 100%; }
 
